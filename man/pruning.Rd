@@ -17,7 +17,7 @@ pruning(mat, r = 10, q = 0.4, e = 0.2)
 }
 \value{
 \describe{
-  \item{\code{indices} the index vector of the rows to be pruned from the left singular matrix.}
+  \item{\code{indices}    the index vector of the rows to be pruned from the left singular matrix.}
 }
 }
 \description{

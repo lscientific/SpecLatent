@@ -11,7 +11,7 @@ spa(mat)
 }
 \value{
 \describe{
-  \item{\code{S_hat} a vector of the pure subject indices.}
+  \item{\code{S_hat}    a vector of the pure subject indices.}
 }
 }
 \description{
