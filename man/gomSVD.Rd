@@ -27,12 +27,12 @@ gomSVD(U, V, d, lower = 0, upper = 1, prune = T, r = 10, q = 0.4, e = 0.2)
 }
 \value{
 The function returns a list with the following components:
-\describe{
-  \item{`P_hat`}{The estimated membership scores.}
-  \item{`T_hat`}{The estimated item response parameters.}
-  \item{`R_hat`}{The estimated response expectation.}
-  \item{`S_hat`}{The estimated indices of pure subjects.}
-  \item{`t`}{Computation time.}
+\itemize{
+\item{\code{P_hat} the estimated membership scores.}
+\item{\code{T_hat} the estimated item response parameters.}
+\item{\code{R_hat} the estimated response expectation.}
+\item{\code{S_hat} the estimated indices of pure subjects.}
+\item{\code{t} computation time.}
 }
 }
 \description{

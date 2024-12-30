@@ -8,7 +8,10 @@
 #'
 #' @param mat the (pruned) left singular matrix to conduct SPA on. 
 
-#' @return The function returns a vector of the pure subject indices `S_hat`.
+#' @return 
+#' \describe{
+#'   \item{\code{S_hat}    a vector of the pure subject indices.}
+#' }
 #' 
 #' @references Gillis, N. and Vavasis, S. A. (2013). Fast and robust recursive algorithms for separable nonnegative matrix factorization. IEEE Transactions on Pattern Analysis and Machine Intelligence, 36(4):698–714.
 

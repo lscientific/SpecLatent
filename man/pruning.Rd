@@ -16,7 +16,9 @@ pruning(mat, r = 10, q = 0.4, e = 0.2)
 \item{e}{the cutoff for the upper quantile of average distance. Higher `e` leads to more points being pruned. Default value is 0.2.}
 }
 \value{
-The function returns the index vector of the rows to be pruned from the left singular matrix `indices`.
+\describe{
+  \item{\code{indices} the index vector of the rows to be pruned from the left singular matrix.}
+}
 }
 \description{
 Locate noisy points in the data simplex.

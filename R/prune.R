@@ -10,7 +10,10 @@
 #' @param q the cutoff for the upper quantile of row norms. Higher `q` leads to more points being pruned. Default value is 0.4.
 #' @param e the cutoff for the upper quantile of average distance. Higher `e` leads to more points being pruned. Default value is 0.2.
 #'
-#' @return The function returns the index vector of the rows to be pruned from the left singular matrix `indices`.
+#' @return 
+#' \describe{
+#'   \item{\code{indices}    the index vector of the rows to be pruned from the left singular matrix.}
+#' }
 #' 
 #' @references Mao, X., Sarkar, P., & Chakrabarti, D. (2021). Estimating mixed memberships with sharp eigenvector deviations. Journal of the American Statistical Association, 116(536), 1928-1940.
 #'

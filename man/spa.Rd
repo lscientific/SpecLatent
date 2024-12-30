@@ -10,7 +10,9 @@ spa(mat)
 \item{mat}{the (pruned) left singular matrix to conduct SPA on.}
 }
 \value{
-The function returns a vector of the pure subject indices `S_hat`.
+\describe{
+  \item{\code{S_hat} a vector of the pure subject indices.}
+}
 }
 \description{
 A sequential projection algorithm (SPA) to find the pure subjects
