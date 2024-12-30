@@ -61,3 +61,6 @@ gomSVD <- function(U, V, d, lower=0, upper=1,
   return(list(P_hat=P_hat, T_hat=T_hat, R_hat=R_hat, S_hat=S_hat, t=t2-t1))
 }
 
+
+# roxygen2::roxygenise()
+

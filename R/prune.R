@@ -1,6 +1,7 @@
 ## File Name: prune.R
 ## File Version: 0.01
 
+
 #' @title pruning 
 #'
 #' @description Locate noisy points in the data simplex.
