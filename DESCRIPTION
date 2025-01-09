@@ -2,5 +2,18 @@ Package: SpecLatent
 Type: Package
 Title: Spectral Methods for Latent Variable Models
 Version: 0.0.1.0
+Authors@R: c(
+    person("Ling", "Chen", email = "lc3835@gmail.com", role = c("aut", "cre")),
+    person("Yuqi", "Gu", email = "yuqi.gu@columbia.edu", role = c("aut")),
+    person("Zhongyuan", "Lyu", email = "zl3361@columbia.edu", role=c("aut")),
+    person("Chengzhu", "Huang", email = "ch3786@columbia.edu", role=c("aut")),
+    person("Seunghyun", "Lee", email = "sl4963@columbia.edu", role=c("aut")))
+Description: This package contains spectral methods for latent variable models, including the generlized-GoM model and degree-heterogeneous latent class model.
 Encoding: UTF-8
 RoxygenNote: 7.3.1
+BugReports: https://github.com/lscientific/SpecLatent/issues
+Depends: 
+    R (>= 2.10)
+Imports: RSpectra, RcppHungarian
+Suggests: ggplot2
+LazyData: true
