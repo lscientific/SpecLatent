@@ -7,7 +7,6 @@
 #' @title Spectral Methods for Latent Variable Models
 #' @description This package contains spectral methods for latent variable models, including the generalized-GoM model and degree-heterogeneous latent class model.
 #' @details
-#' @section Authors: Ling Chen (\email{lc3521@columbia.edu}), Yuqi Gu, Zhongyuan Lyu, Chengzhu Huang, Seunghyun Lee
 #' 
 #' @section Data Example:
 #' 
