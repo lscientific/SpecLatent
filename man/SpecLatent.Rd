@@ -35,7 +35,6 @@ anes[1:6, 1:6]
 res <- gGoM(anes[, 2:146], K=3, pol=T, dist=NULL, large=T, prune=T, r=10, q=0.4, e=0.2)
 
 # ternary plot
-
 library(ggtern)
 # ternary
 data_tern <- as.data.frame(res$P_hat)
