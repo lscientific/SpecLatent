@@ -1,6 +1,6 @@
-Package: sGoM
+Package: SpecLatent
 Type: Package
-Title: Spectral Estimation for Generalized-GoM Models with High-dimensional Locally Dependent Data
+Title: Spectral Methods for Latent Variable Models
 Version: 0.0.1.0
 Encoding: UTF-8
 RoxygenNote: 7.3.1
