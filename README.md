@@ -8,7 +8,19 @@ devtools::install_github("lscientific/SpecLatent")
 
 ## Contents
 ### Generalized Grade-of-Membership (gGoM) model
+- `flatten`
+- `gGoM`
+- `gomSVD`
+- `pruning`
+- `rescale_T`
+- `spa`
+
 ### Degree-heterogeneous Latent Class Model (DhLCM)
+- `DhLCM`
+- `diag_deletion`
+- `heteroPCA`
+- `perm`
+
 ### Datasets
 - anes: a subset of polytomous response data from the American National Election Studies 2022 Pilot Study. Raw data available at [<https://electionstudies.org/data-center/>]
 - senate: a subset of binary response data from the 112th Senate roll call data. Raw data available at [<https://legacy.voteview.com/senate112.htm>]
