@@ -2,7 +2,7 @@
 ## File Version: 0.01
 
 
-
+#' @title flatten 
 #' @description Flatten the polytomous matrix to a fat binary matrix
 #'
 #' @param R integer matrix. The polytomous response data matrix. 
