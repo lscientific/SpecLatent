@@ -4,31 +4,26 @@
 
 #' @title gomSVD
 #'
-#' @description Estimation algorithm for generalized-GoM model with locally dependent data
+#' @description Estimation algorithm for gGoM model with the left singular matrix.
 #'
 #' @param U the pruned left singular matrix from data SVD. 
 #' @param V the right singular matrix from data SVD. 
 #' @param d the vector containing the singular values. 
 #' @param prune logical; if true, the pruning step is performed.
-#' @param r the number of neighbors to consider in pruning. Used only when `prune=T`. Default value is 10.
-#' @param q the cutoff for the upper quantile of row norms. Used only when `prune=T`. Higher `q` leads to more points being pruned. Default value is 0.4.
-#' @param e the cutoff for the upper quantile of average distance. Used only when `prune=T`. Higher `e` leads to more points being pruned. Default value is 0.2.
-#' @param lower the minimum value for item parameters. Default value is 0.
-#' @param upper the minimum value for item parameters. Default value is 1.
+#' @param r the number of neighbors to consider in pruning. Used only when \code{prune} is \code{TRUE}. Default value is 10.
+#' @param q the cutoff for the upper quantile of row norms. Used only when \code{prune} is \code{TRUE}. Higher \code{q} leads to more points being pruned. Default value is 0.4.
+#' @param e the cutoff for the upper quantile of average distance. Used only when \code{prune} is \code{TRUE}. Higher \code{e} leads to more points being pruned. Default value is 0.2.
 #' @return The function returns a list with the following components:
 #' \itemize{
 #' \item{\code{P_hat} the estimated membership scores.}
-#' \item{\code{T_hat} the estimated item response parameters.}
-#' \item{\code{R_hat} the estimated response expectation.}
+#' \item{\code{T_hat} the estimated item response parameters (not truncated).}
+#' \item{\code{R_hat} the estimated response expectation (not truncated).}
 #' \item{\code{S_hat} the estimated indices of pure subjects.}
 #' \item{\code{t} computation time.}
 #' }
-#' 
 #' @export
 
-gomSVD <- function(U, V, d, lower=0, upper=1,
-                    prune=T, r=10, q=0.4, e=0.2) {
-  t1 <- Sys.time()
+gomSVD <- function(U, V, d, prune=T, r=10, q=0.4, e=0.2) {
   N <- nrow(U)
   if (ncol(U) < 2) stop("Error: the column number of U needs to be at least 2!")
   
@@ -50,15 +45,7 @@ gomSVD <- function(U, V, d, lower=0, upper=1,
   R_hat <- U %*% diag(d) %*% t(V)
   T_hat <- t(solve(t(P_hat) %*% P_hat) %*% t(P_hat) %*% R_hat)
   
-  # threshold
-  R_hat[R_hat < lower] <- lower
-  R_hat[R_hat > upper] <- upper
-  T_hat[T_hat < lower] <- lower
-  T_hat[T_hat > upper] <- upper
-  
-  t2 <- Sys.time()
-  
-  return(list(P_hat=P_hat, T_hat=T_hat, R_hat=R_hat, S_hat=S_hat, t=t2-t1))
+  return(list(P_hat=P_hat, T_hat=T_hat, R_hat=R_hat, S_hat=S_hat))
 }
 
 

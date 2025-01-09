@@ -4,7 +4,7 @@
 \alias{gomSVD}
 \title{gomSVD}
 \usage{
-gomSVD(U, V, d, lower = 0, upper = 1, prune = T, r = 10, q = 0.4, e = 0.2)
+gomSVD(U, V, d, prune = T, r = 10, q = 0.4, e = 0.2)
 }
 \arguments{
 \item{U}{the pruned left singular matrix from data SVD.}
@@ -13,28 +13,24 @@ gomSVD(U, V, d, lower = 0, upper = 1, prune = T, r = 10, q = 0.4, e = 0.2)
 
 \item{d}{the vector containing the singular values.}
 
-\item{lower}{the minimum value for item parameters. Default value is 0.}
-
-\item{upper}{the minimum value for item parameters. Default value is 1.}
-
 \item{prune}{logical; if true, the pruning step is performed.}
 
-\item{r}{the number of neighbors to consider in pruning. Used only when `prune=T`. Default value is 10.}
+\item{r}{the number of neighbors to consider in pruning. Used only when \code{prune} is \code{TRUE}. Default value is 10.}
 
-\item{q}{the cutoff for the upper quantile of row norms. Used only when `prune=T`. Higher `q` leads to more points being pruned. Default value is 0.4.}
+\item{q}{the cutoff for the upper quantile of row norms. Used only when \code{prune} is \code{TRUE}. Higher \code{q} leads to more points being pruned. Default value is 0.4.}
 
-\item{e}{the cutoff for the upper quantile of average distance. Used only when `prune=T`. Higher `e` leads to more points being pruned. Default value is 0.2.}
+\item{e}{the cutoff for the upper quantile of average distance. Used only when \code{prune} is \code{TRUE}. Higher \code{e} leads to more points being pruned. Default value is 0.2.}
 }
 \value{
 The function returns a list with the following components:
 \itemize{
 \item{\code{P_hat} the estimated membership scores.}
-\item{\code{T_hat} the estimated item response parameters.}
-\item{\code{R_hat} the estimated response expectation.}
+\item{\code{T_hat} the estimated item response parameters (not truncated).}
+\item{\code{R_hat} the estimated response expectation (not truncated).}
 \item{\code{S_hat} the estimated indices of pure subjects.}
 \item{\code{t} computation time.}
 }
 }
 \description{
-Estimation algorithm for generalized-GoM model with locally dependent data
+Estimation algorithm for gGoM model with the left singular matrix.
 }
