@@ -2,7 +2,7 @@
 % Please edit documentation in R/DhLCM.R
 \name{DhLCM}
 \alias{DhLCM}
-\title{DhLCM}
+\title{DhLCM clustering and estimation}
 \usage{
 DhLCM(
   R,

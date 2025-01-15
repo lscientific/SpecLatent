@@ -2,9 +2,9 @@
 ## File Version: 0.01
 
 
-#' @title gGoM
+#' @title Generalized-GoM estimation
 #'
-#' @description Estimation algorithm for generalized-GoM model with potentially locally dependent data
+#' @description Estimation algorithm for generalized-GoM models
 #'
 #' @param R data matrix.
 #' @param K integer. The number of extreme latent profiles. \code{K} should be at least 2.

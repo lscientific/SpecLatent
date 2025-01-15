@@ -2,7 +2,7 @@
 ## File Version: 0.01
 
 
-#' @title pruning 
+#' @title Prunes out noisy data points
 #'
 #' @description Locate noisy points in the data simplex.
 #'

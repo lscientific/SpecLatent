@@ -2,8 +2,8 @@
 ## File Version: 0.01
 
 
-#' @title flatten 
-#' @description Flatten the polytomous matrix to a fat binary matrix
+#' @title Flattens polytomous matrix
+#' @description Flatten a polytomous matrix to a fat binary matrix
 #'
 #' @param R integer matrix. The polytomous response data matrix. 
 #'
@@ -37,7 +37,7 @@ flatten <- function(R) {
   return(R_flattened)
 }
 
-#' @title rescale_T 
+#' @title Re-scale the item parameter matrix 
 #' @description Re-scale the item parameter estimation \code{T_hat} for polytomous GoM
 #'
 #' @param T_mat Numeric matrix. Item parameter matrix.

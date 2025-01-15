@@ -2,7 +2,7 @@
 % Please edit documentation in R/heteroPCA.R
 \name{heteroPCA}
 \alias{heteroPCA}
-\title{heteroPCA}
+\title{HeteroPCA}
 \usage{
 heteroPCA(R, K, T0)
 }

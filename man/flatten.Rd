@@ -2,7 +2,7 @@
 % Please edit documentation in R/flatten.R
 \name{flatten}
 \alias{flatten}
-\title{flatten}
+\title{Flattens polytomous matrix}
 \usage{
 flatten(R)
 }
@@ -15,5 +15,5 @@ flatten(R)
 }
 }
 \description{
-Flatten the polytomous matrix to a fat binary matrix
+Flatten a polytomous matrix to a fat binary matrix
 }

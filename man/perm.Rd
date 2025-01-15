@@ -2,7 +2,7 @@
 % Please edit documentation in R/perm.R
 \name{perm}
 \alias{perm}
-\title{perm}
+\title{Permutes a vector}
 \usage{
 perm(x, p)
 }
@@ -15,5 +15,5 @@ perm(x, p)
 Permuted vector \code{x_perm}
 }
 \description{
-This function performs permutation
+This function performs permutation on a vector
 }

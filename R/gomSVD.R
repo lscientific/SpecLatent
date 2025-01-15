@@ -2,7 +2,7 @@
 ## File Version: 0.01
 
 
-#' @title gomSVD
+#' @title gGoM estimation based on the left singular matrix
 #'
 #' @description Estimation algorithm for gGoM model with the left singular matrix.
 #'
@@ -47,7 +47,4 @@ gomSVD <- function(U, V, d, prune=T, r=10, q=0.4, e=0.2) {
   
   return(list(P_hat=P_hat, T_hat=T_hat, R_hat=R_hat, S_hat=S_hat))
 }
-
-
-# roxygen2::roxygenise()
 

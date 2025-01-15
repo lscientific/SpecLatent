@@ -2,7 +2,7 @@
 % Please edit documentation in R/diag_deletion.R
 \name{diag_deletion}
 \alias{diag_deletion}
-\title{diag_deletion}
+\title{Diagonal deletion}
 \usage{
 diag_deletion(X)
 }

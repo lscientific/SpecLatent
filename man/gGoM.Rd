@@ -2,7 +2,7 @@
 % Please edit documentation in R/gGoM.R
 \name{gGoM}
 \alias{gGoM}
-\title{gGoM}
+\title{Generalized-GoM estimation}
 \usage{
 gGoM(
   R,
@@ -53,7 +53,7 @@ The function returns a list with the following components:
 }
 }
 \description{
-Estimation algorithm for generalized-GoM model with potentially locally dependent data
+Estimation algorithm for generalized-GoM models
 }
 \references{
 Chen, Ling, and Yuqi Gu. "A spectral method for identifiable grade of membership analysis with binary responses." Psychometrika (2024): 1-32.

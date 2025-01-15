@@ -2,7 +2,7 @@
 % Please edit documentation in R/flatten.R
 \name{rescale_T}
 \alias{rescale_T}
-\title{rescale_T}
+\title{Re-scale the item parameter matrix}
 \usage{
 rescale_T(T_mat, Cs)
 }

@@ -2,7 +2,7 @@
 ## File Version: 0.01
 
 
-#' @title heteroPCA 
+#' @title HeteroPCA 
 #' @description This function implements the HeteroPCA algorithm
 #'
 #' @param R Numeric matrix. The matrix to perform HeteroPCA.

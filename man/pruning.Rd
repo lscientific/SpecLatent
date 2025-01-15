@@ -2,7 +2,7 @@
 % Please edit documentation in R/prune.R
 \name{pruning}
 \alias{pruning}
-\title{pruning}
+\title{Prunes out noisy data points}
 \usage{
 pruning(mat, r = 10, q = 0.4, e = 0.2)
 }

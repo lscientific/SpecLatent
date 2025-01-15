@@ -2,7 +2,7 @@
 ## File Version: 0.01
 
 
-#' @title spa
+#' @title Sequential projection algorithm
 #'
 #' @description A sequential projection algorithm (SPA) to find the pure subjects
 #'

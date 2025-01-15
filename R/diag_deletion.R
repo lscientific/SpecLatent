@@ -2,7 +2,7 @@
 ## File Version: 0.01
 
 
-#' @title diag_deletion 
+#' @title Diagonal deletion 
 #' @description This function takes in a matrix, and returns the diagonal-deleted matrix
 #'
 #' @param X Numeric matrix

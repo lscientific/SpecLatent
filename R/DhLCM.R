@@ -2,7 +2,7 @@
 ## File Version: 0.01
 
 
-#' @title DhLCM 
+#' @title DhLCM clustering and estimation
 #' @description This function performs k-means clustering on the top \code{K} eigenvectors/left singular vectors, and estimates the DhLCM model parameters
 #'
 #' @param R Numeric matrix. Data matrix.

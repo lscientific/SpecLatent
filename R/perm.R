@@ -2,8 +2,8 @@
 ## File Version: 0.01
 
 
-#' @title perm
-#' @description This function performs permutation 
+#' @title Permutes a vector
+#' @description This function performs permutation on a vector
 #'
 #' @param x Numeric vector. Vector of labels with integer values 1, ..., K
 #' @param p Numeric vector. An integer permutation vector.

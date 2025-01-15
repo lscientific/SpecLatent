@@ -2,7 +2,7 @@
 % Please edit documentation in R/spa.R
 \name{spa}
 \alias{spa}
-\title{spa}
+\title{Sequential projection algorithm}
 \usage{
 spa(mat)
 }

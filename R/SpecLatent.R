@@ -10,12 +10,13 @@
 #' 
 #' @section Data Example:
 #' 
-#' The package includes a sample dataset, `anes`, from the American National Election Studies (ANES) 2022 pilot study
+#' `data_anes`, from the American National Election Studies (ANES) 2022 pilot study
+#' `data_senate`, from the 112th Senate roll call data
 #' 
 #' @examples
 #' \donttest{
 #' # Load the dataset
-#' data(anes)
+#' data(data_anes)
 #' 
 #' # Inspect the first few rows and columns of the dataset
 #' anes[1:6, 1:6]

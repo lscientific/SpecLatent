@@ -2,7 +2,7 @@
 % Please edit documentation in R/gomSVD.R
 \name{gomSVD}
 \alias{gomSVD}
-\title{gomSVD}
+\title{gGoM estimation based on the left singular matrix}
 \usage{
 gomSVD(U, V, d, prune = T, r = 10, q = 0.4, e = 0.2)
 }
