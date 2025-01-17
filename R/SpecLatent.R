@@ -45,5 +45,5 @@
 #' }
 #' 
 #' @author 
-#' Ling Chen (\email{lc3521@columbia.edu}), Yuqi Gu, Zhongyuan Lyu, Chengzhu Huang, Seunghyun Lee
+#' Ling Chen (\email{lc3521@columbia.edu}), Yuqi Gu, Zhongyuan Lyu, Chengzhu Huang
 "_PACKAGE"
